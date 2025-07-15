@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController()
-@RequestMapping("/business")
+@RequestMapping("/business/services")
 public class BusinessController {
 
-    @GetMapping("/services")
+    @GetMapping("/")
     public String[] getServices() {
         return new String[] {"Create Iqama for a worker",
                 "Renew Iqama for Employees",

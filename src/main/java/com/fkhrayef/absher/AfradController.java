@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController()
-@RequestMapping("/afrad")
+@RequestMapping("/afrad/services")
 public class AfradController {
 
-    @GetMapping("services")
+    @GetMapping("")
     public String[] getServices() {
         return new String[] {"Issue a passport",
                 "Renew passport",
